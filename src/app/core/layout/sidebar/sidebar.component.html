@@ -1,23 +1,31 @@
-<aside>
+<aside
+  class="d-flex flex-column justify-content-between flex-shrink-0 py-4 h-100"
+>
   <div
-    class="d-flex flex-column justify-content-between flex-shrink-0 bg-light py-4 h-100"
+    class="image flex-column text-center text-center align-items-center mb-3"
   >
-    <ul
-      class="nav nav-pills nav-flush flex-column mb-auto text-center text-center align-items-center h-100"
-    >
-    <img src="image.png" alt="Descrição" width="50%" class="mb-3">
-
-      <p class="d-flex align-items-center gap-2 text-center">
-        <!-- <span class="material-symbols-outlined"> settings </span> Configurações -->
-      </p>
-    </ul>
-
-    <ul
-      class="nav nav-pills nav-flush flex-column mb-auto text-center justify-content-end text-center align-items-center h-100"
-    >
-      <p class="d-flex align-items-center gap-2 text-center">
-        <span class="material-symbols-outlined"> settings </span> Configurações
-      </p>
-    </ul>
+    <img src="image.png" alt="Descrição" width="50%" class="mb-3" />
+    <hr />
   </div>
+  <nav
+    class="nav nav-pills nav-flush d-flex flex-column mb-auto ml-auto text-start px-3 h-100 gap-4"
+  >
+    <p
+      class="d-flex align-items-start gap-2 text-start"
+      *ngFor="let item of navItems"
+      routerLink="{{ item.path }}"
+      routerLinkActive="active"
+    >
+      <span class="material-symbols-outlined"> {{ item.icon }} </span>
+      {{ item.name }}
+    </p>
+  </nav>
+
+  <ul
+    class="nav nav-pills nav-flush flex-column mb-auto text-start justify-content-end text-center align-items-center h-100"
+  >
+    <p class="d-flex align-items-center gap-2 text-center">
+      <span class="material-symbols-outlined"> settings </span> Configurações
+    </p>
+  </ul>
 </aside>

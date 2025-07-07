@@ -1,4 +1,4 @@
-aside{
+aside {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,5 +6,16 @@ aside{
   width: 192px;
   z-index: 1031;
   height: 100vh;
-  background-color: #f8f9fa;
+  background-color: var(--card-background);
+  color: var(--text-color);
+
+  p {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5rem;
+  }
+
+  p:hover {
+    background-color: var(--hover-color);
+  }
 }
