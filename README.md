@@ -65,12 +65,7 @@ Para este projeto, a URL da API do backend está definida diretamente nos arquiv
 ## 🏗️ Estrutura do Projeto
 
 - **`src/app/components/`**: Contém os principais componentes standalone da aplicação.
-  - `chat/`: A interface principal de chat.
-  - `agent-list/`: A tela que exibe os cards de todos os agentes criados.
-  - `agent-form/`: O formulário para criar um novo agente.
 - **`src/app/services/`**: Contém os serviços que encapsulam a lógica de comunicação com a API do backend.
-  - `chat.service.ts`: Lida com as requisições para o endpoint de chat.
-  - `agent.service.ts`: Lida com o CRUD de agentes.
 - **`src/app/models/`**: Define as interfaces e tipos (ex: `Message`, `Agent`) para garantir a segurança de tipo em toda a aplicação.
 
 ## 🔮 Próximos Passos
